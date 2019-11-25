@@ -1394,7 +1394,7 @@ footer {
     }
 
     .single-post h1.entry-title, 
-    .blog-item-holder h2.entry-title, 
+    .blog-item-holder, 
     h1.entry-title.page-title {
         font-size: 34px;
         margin-bottom: 35px;
@@ -1402,7 +1402,7 @@ footer {
     
     h2.entry-title, 
     h2.entry-title.page-title {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 0px;
     }    
 
@@ -1429,10 +1429,20 @@ footer {
     }
 
     .single-post h1.entry-title, 
-    .blog-item-holder h2.entry-title, 
+    .blog-item-holder, 
     h1.entry-title.page-title {
-        font-size: 27px;        
+        font-size: 24px;        
     }  
+    
+    h2.entry-title, 
+    h2.entry-title.page-title {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }    
+
+    .portfolio-title {
+        font-size: 8px;
+    }   
 
     .simple-image-slider-pagination.swiper-pagination {
         margin-bottom: 15px;
