@@ -284,12 +284,27 @@ header.scrolled {
     padding: 30px;
     height: 100%;
     transition: transform var(--transition-speed) ease;
-    border-bottom: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+.highlight-card:hover::after {
+    width: 100%;
 }
 
 .highlight-card:hover {
     transform: translateY(-10px);
-    border-bottom: 3px solid var(--accent-red);
 }
 
 .icon-wrapper {
