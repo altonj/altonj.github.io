@@ -346,6 +346,16 @@ header.scrolled {
     transform: translateX(10px);
 }
 
+.media-card h4,
+.media-card p {
+    color: var(--white);
+}
+
+.media-card:hover h4,
+.media-card:hover p {
+    color: var(--white);
+}
+
 /* Page Header Section */
 .page-header-section {
     position: relative;
