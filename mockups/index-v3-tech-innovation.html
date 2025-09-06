@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alton Johnson - Tech Innovation Leader</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/modern-style.css">
+    
+    <style>
+        /* Tech Innovation Specific Styles */
+        .tech-hero {
+            background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tech-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(45deg, transparent 24%, rgba(255, 0, 0, 0.05) 25%, rgba(255, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 0, 0.05) 75%, rgba(255, 0, 0, 0.05) 76%, transparent 77%, transparent),
+                linear-gradient(-45deg, transparent 24%, rgba(0, 160, 160, 0.03) 25%, rgba(0, 160, 160, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 160, 160, 0.03) 75%, rgba(0, 160, 160, 0.03) 76%, transparent 77%, transparent);
+            background-size: 50px 50px;
+            animation: techGrid 20s linear infinite;
+        }
+        
+        @keyframes techGrid {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(50px) translateY(50px); }
+        }
+        
+        .geometric-border {
+            position: relative;
+            padding: 2rem;
+        }
+        
+        .geometric-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--accent-red), var(--accent-teal), var(--accent-red));
+            z-index: -1;
+            transform: scale(1.02);
+            border-radius: 10px;
+        }
+        
+        .achievement-metric {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            line-height: 1;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+        
+        .achievement-label {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-gray);
+            margin-top: 0.5rem;
+        }
+        
+        .innovation-card {
+            background: linear-gradient(135deg, var(--dark-gray) 0%, var(--light-gray) 100%);
+            border: 1px solid rgba(255, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .innovation-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, rgba(255, 0, 0, 0.1), transparent 30%);
+            animation: innovationRotate 8s linear infinite;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .innovation-card:hover::before {
+            opacity: 1;
+        }
+        
+        @keyframes innovationRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .innovation-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--accent-red);
+            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2);
+        }
+        
+        .innovation-icon {
+            font-size: 3rem;
+            color: var(--accent-teal);
+            margin-bottom: 1.5rem;
+            transition: all 0.4s ease;
+        }
+        
+        .innovation-card:hover .innovation-icon {
+            color: var(--accent-red);
+            transform: scale(1.1) rotateY(180deg);
+        }
+        
+        .pulse-accent {
+            animation: pulseAccent 2s infinite;
+        }
+        
+        @keyframes pulseAccent {
+            0%, 100% { 
+                color: var(--accent-red);
+                text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            }
+            50% { 
+                color: var(--accent-teal);
+                text-shadow: 0 0 20px rgba(0, 160, 160, 0.5);
+            }
+        }
+        
+        .photo-container {
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--accent-red);
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+            transition: all 0.4s ease;
+        }
+        
+        .photo-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
+        }
+        
+        .cta-primary {
+            background: linear-gradient(45deg, var(--accent-red), #cc0000);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .cta-primary:hover::before {
+            left: 100%;
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+            background: linear-gradient(45deg, #cc0000, var(--accent-red));
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            color: var(--accent-teal);
+            border: 2px solid var(--accent-teal);
+            padding: 1rem 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+        }
+        
+        .cta-secondary:hover {
+            background: var(--accent-teal);
+            color: var(--black);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 160, 160, 0.4);
+        }
+        
+        .stats-counter {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-red), var(--accent-teal), var(--accent-red), transparent);
+            margin: 4rem auto;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="fixed-top" id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="../images/logo.png" alt="Alton Johnson" class="logo-image">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#innovation">Innovation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#achievements">Achievements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover" href="../about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover" href="../press.html">Press</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section tech-hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content fade-up">
+                        <h1 class="display-2 fw-light mb-4">
+                            Technology Innovation
+                            <span class="pulse-accent d-block">Architect</span>
+                        </h1>
+                        <p class="lead mb-4">
+                            Transforming complex challenges into breakthrough solutions. 
+                            From founding and scaling a cybersecurity company to building "impossible" 
+                            automated platforms, I architect the future of technology.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#services" class="btn cta-primary me-3 mb-3">
+                                Explore Solutions
+                            </a>
+                            <a href="../first-infosec-job.html" class="btn cta-secondary mb-3 link-hover">
+                                My Story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="photo-container mx-auto" style="width: 350px; height: 350px;">
+                        <img src="../images/Alton-Headshot7.jpg" alt="Alton Johnson" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Metrics -->
+    <section class="py-5 bg-dark-gray">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="stats-counter" data-target="1">1</div>
+                    <div class="achievement-label">Company Founded & Sold</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stats-counter" data-target="15">15+</div>
+                    <div class="achievement-label">Years Innovation Leadership</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stats-counter" data-target="1000">1000+</div>
+                    <div class="achievement-label">Organizations Secured</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Focus Section -->
+    <section id="innovation" class="py-5 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-light">Innovation Leadership</h2>
+                    <div class="section-divider"></div>
+                    <p class="lead text-muted">
+                        Pioneering technology solutions that others deemed impossible, 
+                        from automated penetration testing to enterprise-scale automation platforms.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="innovation-card p-4 h-100 rounded">
+                        <div class="text-center">
+                            <i class="fas fa-rocket innovation-icon"></i>
+                            <h4 class="mb-3">Breakthrough Platform</h4>
+                            <p>Built the world's first fully automated penetration testing platform, 
+                               revolutionizing cybersecurity assessment methodology and proving 
+                               "impossible" engineering challenges can be conquered.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="innovation-card p-4 h-100 rounded">
+                        <div class="text-center">
+                            <i class="fas fa-crown innovation-icon"></i>
+                            <h4 class="mb-3">Strategic Exit</h4>
+                            <p>Successfully founded, scaled, and sold VonAhi Security to Kaseya, 
+                               demonstrating exceptional ability to build market-leading technology 
+                               companies from concept to acquisition.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="innovation-card p-4 h-100 rounded">
+                        <div class="text-center">
+                            <i class="fas fa-cogs innovation-icon"></i>
+                            <h4 class="mb-3">Automation Mastery</h4>
+                            <p>Architected enterprise automation solutions that eliminate manual 
+                               processes, reduce operational costs by 60%+, and enable organizations 
+                               to scale beyond traditional limitations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 highlights-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-light">Elite Services</h2>
+                    <div class="section-divider"></div>
+                    <p class="lead text-muted">
+                        Exclusive consulting services for organizations ready to transcend 
+                        conventional limitations and achieve breakthrough results.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="highlight-card rounded h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-chart-line" style="font-size: 3rem; color: var(--accent-red);"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Workflow Optimization</h4>
+                        <p class="text-center">
+                            Transform operational inefficiencies into competitive advantages. 
+                            Strategic process engineering that delivers measurable productivity 
+                            gains and cost reductions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="highlight-card rounded h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-lightbulb" style="font-size: 3rem; color: var(--accent-red);"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Product Development</h4>
+                        <p class="text-center">
+                            Turn visionary concepts into market-ready solutions. End-to-end 
+                            product strategy, architecture, and execution that creates 
+                            sustainable competitive differentiation.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="highlight-card rounded h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--accent-red);"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Cybersecurity Consulting</h4>
+                        <p class="text-center">
+                            Enterprise-grade security architecture from a founder who built 
+                            and sold a cybersecurity company. Protect what matters most with 
+                            proven strategies and cutting-edge solutions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="highlight-card rounded h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-brain" style="font-size: 3rem; color: var(--accent-red);"></i>
+                        </div>
+                        <h4 class="text-center mb-3">AI Training</h4>
+                        <p class="text-center">
+                            Accelerate your organization's AI adoption with strategic training 
+                            and implementation guidance. Transform your team into AI-powered 
+                            innovation leaders.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="highlight-card rounded h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-users" style="font-size: 3rem; color: var(--accent-red);"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Leadership Development</h4>
+                        <p class="text-center">
+                            Cultivate next-generation leaders who drive technological transformation. 
+                            Strategic leadership coaching based on real-world experience building 
+                            and scaling innovative companies.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-4 mb-4 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h5 class="text-accent mb-3">Ready to Innovate?</h5>
+                        <p class="mb-4">
+                            Elite organizations demand exceptional results. 
+                            Let's discuss how we can transform your challenges into breakthroughs.
+                        </p>
+                        <a href="#contact" class="btn cta-primary">
+                            Schedule Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-5 bg-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-light">Proven Results</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="geometric-border bg-black rounded">
+                        <h3 class="text-accent mb-4">Track Record of Excellence</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-check-circle text-accent me-3"></i>
+                                Founded VonAhi Security and successfully sold to Kaseya
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-check-circle text-accent me-3"></i>
+                                Built world's first automated penetration testing platform
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-check-circle text-accent me-3"></i>
+                                15+ years of technology innovation leadership
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-check-circle text-accent me-3"></i>
+                                Secured 1000+ organizations with breakthrough solutions
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-check-circle text-accent me-3"></i>
+                                Expert in automation, AI, and workflow optimization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 text-center">
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <div class="achievement-metric">$M+</div>
+                            <div class="achievement-label">Company Valuation</div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="achievement-metric">60%+</div>
+                            <div class="achievement-label">Cost Reduction</div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="achievement-metric">100%</div>
+                            <div class="achievement-label">Automation Success</div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="achievement-metric">∞</div>
+                            <div class="achievement-label">Innovation Potential</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact" class="py-5 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-light mb-4">
+                        Transform Your <span class="text-accent">Impossible</span> 
+                        Into <span class="pulse-accent">Inevitable</span>
+                    </h2>
+                    <p class="lead mb-5">
+                        Join the elite organizations that have transcended conventional limitations. 
+                        Your breakthrough is one conversation away.
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <p class="text-muted mb-4">
+                                <strong>Warning:</strong> This level of innovation isn't for everyone. 
+                                Only forward-thinking leaders ready for transformational results need apply.
+                            </p>
+                            <a href="mailto:alton@altonj.com" class="btn cta-primary me-3 mb-3">
+                                Schedule Elite Consultation
+                            </a>
+                            <a href="../about.html" class="btn cta-secondary mb-3 link-hover">
+                                Learn My Approach
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="copyright text-center text-md-start">
+                        <p class="mb-0">&copy; 2024 Alton Johnson. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links justify-content-center justify-content-md-end">
+                        <a href="https://www.linkedin.com/in/altonjohnson/" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/altonjohnson" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:alton@altonj.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../js/main.js"></script>
+    
+    <script>
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stats-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + (target === 1000 ? '+' : target === 15 ? '+' : '');
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.ceil(current) + (target === 1000 ? '+' : target === 15 ? '+' : '');
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when section is visible
+        const observerOptions = {
+            threshold: 0.5,
+            once: true
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const statsSection = document.querySelector('.stats-counter').closest('section');
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+        });
+
+        // Enhanced fade-up animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-up');
+            
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            fadeElements.forEach(element => {
+                fadeObserver.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
