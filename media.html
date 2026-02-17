@@ -114,20 +114,55 @@
         <div class="container">
             <span class="section-label">Media Kit</span>
             <h2>Press Assets</h2>
-            <div class="grid-2">
-                <div class="glass">
-                    <h3>Headshots</h3>
-                    <p>Download high-resolution official photos for media use.</p>
-                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-                        <a href="images/Alton-Headshot7.jpg" download class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Press Photo</a>
-                        <a href="images/Alton-headshot-casual.jpg" download class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Casual Photo</a>
+            <p style="max-width: 600px; margin: 0 auto 3rem; text-align: center; opacity: 0.8;">High-resolution photos and official biography for media use. Click any image to download.</p>
+            
+            <div class="grid-3">
+                <!-- Press Headshot -->
+                <a href="images/Alton-Headshot7.jpg" download class="press-asset-card glass">
+                    <div class="press-asset-image">
+                        <img src="images/Alton-Headshot7.jpg" alt="Alton Johnson Press Photo">
+                        <div class="press-asset-overlay">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download</span>
+                        </div>
                     </div>
-                </div>
-                <div class="glass">
-                    <h3>Official Bio</h3>
-                    <p>Professional bio for event programs and introductions.</p>
-                    <a href="Alton-Johnson-Bio.pdf" download class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1.5rem; display: inline-block;">Download PDF Bio</a>
-                </div>
+                    <div class="press-asset-info">
+                        <h3>Press Photo</h3>
+                        <p>Professional headshot</p>
+                    </div>
+                </a>
+
+                <!-- Casual Headshot -->
+                <a href="images/Alton-headshot-casual.jpg" download class="press-asset-card glass">
+                    <div class="press-asset-image">
+                        <img src="images/Alton-headshot-casual.jpg" alt="Alton Johnson Casual Photo">
+                        <div class="press-asset-overlay">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download</span>
+                        </div>
+                    </div>
+                    <div class="press-asset-info">
+                        <h3>Casual Photo</h3>
+                        <p>Relaxed setting</p>
+                    </div>
+                </a>
+
+                <!-- Official Bio PDF -->
+                <a href="Alton-Johnson-Bio.pdf" download class="press-asset-card glass">
+                    <div class="press-asset-image press-asset-document">
+                        <div class="document-icon">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <div class="press-asset-overlay">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download</span>
+                        </div>
+                    </div>
+                    <div class="press-asset-info">
+                        <h3>Official Bio</h3>
+                        <p>PDF format</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
