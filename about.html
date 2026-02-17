@@ -1,246 +1,118 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Alton Johnson</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Learn more about Alton Johnson - ethical hacker, security expert, and founder of Vonahi Security. Discover his professional background, skills, and achievements."/>
-    <meta name="keywords" content="Alton Johnson bio, about Alton Johnson, cybersecurity expert, ethical hacker, penetration testing, security automation" />
-    <meta name="author" content="Alton Johnson" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link rel="shortcut icon" href="images/favicon.ico" />    
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/modern-style.css" />
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LD26WCVGQQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LD26WCVGQQ');
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<body>
 
-<body class="bg-black text-white">
-    <div id="preloader" class="preloader">
-        <div class="spinner"></div>
-    </div>
+    <div class="bg-glow"></div>
 
-    <header class="fixed-top">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Alton Johnson" class="logo-image">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="consulting-services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="growing-up-in-nola.html">Story</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="press.html">Media</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Alton" style="height: 40px; width: auto;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="mailto:alton@shiftclick.io" class="btn-nav">Contact_Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <span class="section-label">Professional Profile</span>
+            <h1>The <span class="gradient-text">Human</span> Behind the Code.</h1>
+            <p style="max-width: 700px;">From script kiddie in New Orleans to selling a cybersecurity company to Kaseya.</p>
         </div>
     </header>
 
-    <main>
-        <!-- Page Header Section -->
-        <section class="page-header-section">
-            <div class="container-fluid p-0">
-                <div class="page-header-image-container">
-                    <img src="images/about.png" alt="Alton Johnson" class="page-header-image">
-                    <div class="page-header-overlay"></div>
-                    <div class="page-header-content" data-aos="fade-up">
-                        <h1 class="display-3 fw-light text-uppercase">About Me</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Timeline Section -->
-        <section class="timeline-section py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <h2 class="display-5 fw-light mb-4">My Journey</h2>
-                        <div class="timeline" data-aos="fade-up" data-aos-delay="100">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2002</div>
-                                <div class="timeline-content">
-                                    <p>Introduced to computers at age 11 and started learning how to hack (as a <a href="https://en.wikipedia.org/wiki/Script_kiddie" class="text-accent">script kiddie</a>) and code in Visual Basics.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2005</div>
-                                <div class="timeline-content">
-                                    <p>Relocated from New Orleans to Baton Rouge due to Hurricane Katrina.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2008</div>
-                                <div class="timeline-content">
-                                    <p>Immediately after obtaining my GED, I enrolled at Louisiana Technical College at the age of 16 to pursue a degree in Computer Networking.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2009</div>
-                                <div class="timeline-content">
-                                    <p>Started first IT job as an IT Technician at Managed Service Provider / third-party IT company. Began second job at LSU as an IT Technician later that year.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2010</div>
-                                <div class="timeline-content">
-                                    <p>Graduated from LTC with a technical diploma and started working at a federal credit union in IT while obtaining infosec certifications.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2011</div>
-                                <div class="timeline-content">
-                                    <p>Officially launched InfoSec career by joining TraceSecurity, a cybersecurity firm located in Baton Rouge, LA. Obtained CCNA, eCPPT, and OSCP while working here as well.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2013</div>
-                                <div class="timeline-content">
-                                    <p>Began working at Accuvant, a cybersecurity firm, as an Associate Consultant and was promoted three times from Associate to Principal within 2 years.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2015</div>
-                                <div class="timeline-content">
-                                    <p>Began working as a Principal Security Consultant at DirectDefense.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2018</div>
-                                <div class="timeline-content">
-                                    <p>Officially launched <a href="https://www.vonahi.io/" target="_blank" class="text-accent">Vonahi Security</a> to offer traditional cybersecurity consulting services.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2020</div>
-                                <div class="timeline-content">
-                                    <p>Vonahi Security officially launched <a href="https://www.vonahi.io/vpentest" target="_blank" class="text-accent">vPenTest</a> to automate network penetration testing.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">2023</div>
-                                <div class="timeline-content">
-                                    <p>Vonahi Security was acquired by <a href="https://www.kaseya.com/" target="_blank" class="text-accent">Kaseya</a>, headquartered in Miami, FL. Press release available <a href="https://www.einpresswire.com/article/629541100/kaseya-acquires-vonahi-security-to-revolutionize-cybersecurity-with-automated-network-penetration-testing" target="_blank" class="text-accent">here</a>.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0" data-aos="fade-left">
-                        <div class="bio-card p-4 mb-5">
-                            <h3 class="fw-light mb-3">What I Do</h3>
-                            <h4 class="fw-light">Founder and Principal Security Consultant of Vonahi Security</h4>
-                            <p>I started my own company with a mission to fulfill the demand of high-quality cybersecurity consulting services and solutions. We're able to accomplish this by revamping the way consulting services are offered, implementing more efficiency, affordability, comprehensiveness, and automation where necessary, allowing us to provide more value. By paving the way for automation in cybersecurity, we're able to help businesses in all verticals scale and assess their risks to cyber attacks in real-time.</p>
-                        </div>
-                        
-                        <div class="bio-card p-4 mb-5">
-                            <h3 class="fw-light mb-3">My Passion</h3>
-                            <h4 class="fw-light">Specialist Areas</h4>
-                            <p>Cybersecurity, automated penetration testing, vulnerability research, exploit development, coding, cryptography, malware, phishing, social engineering, technology innovation.</p>
-                        </div>
-                        
-                        <div class="bio-card p-4 mb-5">
-                            <h3 class="fw-light mb-3">What I Enjoy</h4>
-                            <h4 class="fw-light">Non-Hacking Hobbies</h4>
-                            <p>Aside from cybersecurity, I'm also a car enthusiast. I enjoy modifying and racing my car on the tracks. I also enjoy photography, especially automotive photography, as well as playing Billiards as often as possible.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Hobby Image Section -->
-        <section class="hobby-image-section py-5 bg-darker">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12" data-aos="fade-up">
-                        <img src="images/alton-hobby.png" alt="Alton Johnson" class="img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer" class="footer py-5">
+    <section>
         <div class="container">
-            <div class="text-center mb-4">
-                <img src="images/alton-logo-footer.png" alt="Alton Johnson" class="footer-logo">
+            <div class="grid-2">
+                <div class="glass" style="padding: 2.5rem;">
+                    <h3>What I Do</h3>
+                    <p>I live at the intersection of coding, cybersecurity, and AI. I'm obsessed with building automated tools that most people think are impossible to build.</p>
+                    <p>I thrive on solving high-stakes technical problems by writing code that actually works where others give up. Whether it's securing an infrastructure or optimizing a complex workflow, I'm all about creative engineering that delivers real, measurable impact.</p>
+                </div>
+                <div class="glass" style="padding: 2.5rem;">
+                    <h3>What I Enjoy</h3>
+                    <p>When I'm not building software or hacking, I'm usually deep in a hands-on technical project. I'm a car enthusiast who enjoys racing and automotive photography, and I've recently been spending more time with 3D printing and robotics.</p>
+                    <p>I also enjoy playing Billiards as often as possible and always looking for the next thing to build or "figure out."</p>
+                </div>
             </div>
-            <div class="social-links text-center mb-4">
-                <a href="https://www.linkedin.com/in/altonjx/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
-                <a href="https://www.instagram.com/altjx/" target="_blank" class="social-link"><i class="bi bi-instagram"></i></a>
-                <a href="https://twitter.com/altonjx" target="_blank" class="social-link"><i class="bi bi-twitter-x"></i></a>
-                <a href="https://www.facebook.com/altonjx" target="_blank" class="social-link"><i class="bi bi-facebook"></i></a>
-            </div>
-            <div class="contact-info text-center mb-4">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <p class="contact-label">EMAIL</p>
-                        <p><a href="mailto:alton@shiftclick.io">alton@shiftclick.io</a></p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2002</span>
+                    <div class="timeline-content">
+                        <h3>First Interaction</h3>
+                        <p>Introduced to computers at age 11. Started learning how to hack and code in Visual Basics.</p>
                     </div>
-                    <div class="col-md-6">
-                        <p class="contact-label">LOCATION</p>
-                        <p>Atlanta, GA</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2007</span>
+                    <div class="timeline-content">
+                        <h3>GED Achievement</h3>
+                        <p>Obtained my GED from Louisiana Technical College in Baton Rouge, LA, shortly after relocating due to Hurricane Katrina.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2011</span>
+                    <div class="timeline-content">
+                        <h3>InfoSec Career Launch</h3>
+                        <p>Joined TraceSecurity. Obtained CCNA, eCPPT, OSCP, and OSCE certifications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2018</span>
+                    <div class="timeline-content">
+                        <h3>Founded Vonahi Security</h3>
+                        <p>Launched with a mission to offer traditional cybersecurity consulting services with a modern twist.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2023</span>
+                    <div class="timeline-content">
+                        <h3>Acquisition by Kaseya</h3>
+                        <p>Vonahi Security was successfully acquired by Kaseya, the largest MSP provider globally.</p>
                     </div>
                 </div>
             </div>
-            <div class="copyright text-center">
-                <p>© 2025 - Alton Johnson. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="images/alton-logo-footer.png" alt="Alton Johnson" style="max-width: 200px; height: auto; opacity: 0.8;">
+            </div>
+            <div class="footer-bottom">
+                <p>root@altonj.io:~$ <span class="cursor">_</span></p>
+                <div class="socials">
+                    <a href="https://github.com/altjx" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/altonjx/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/altonjx" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="js/modern-main.js"></script>
 </body>
 </html>
