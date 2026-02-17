@@ -257,6 +257,7 @@ section {
     background: var(--accent);
     border-radius: 2px;
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .grid-2 {
