@@ -332,6 +332,7 @@ section {
 
 .about-img img {
     width: 100%;
+    height: auto;
     filter: grayscale(100%);
     transition: filter 0.5s;
 }
