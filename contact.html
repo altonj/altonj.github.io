@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Alton Johnson</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8MFDJ1BH9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z8MFDJ1BH9');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info-card {
+            padding: 2.5rem;
+        }
+
+        .contact-info-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-method:last-child {
+            border-bottom: none;
+        }
+
+        .contact-method i {
+            color: var(--accent);
+            font-size: 1.25rem;
+            width: 24px;
+            text-align: center;
+        }
+
+        .contact-method a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-method a:hover {
+            color: var(--accent);
+        }
+
+        .contact-form {
+            padding: 2.5rem;
+        }
+
+        .contact-form h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(148, 163, 184, 0.5);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394A3B8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+        }
+
+        .form-group select option {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px var(--accent-glow);
+        }
+
+        @media (max-width: 900px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-form,
+            .contact-info-card {
+                padding: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Alton" width="270" height="270" style="height: 40px; width: auto;">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html" class="btn-nav active">Contact_Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <span class="section-label">Get In Touch</span>
+            <h1>Let's <span class="gradient-text">Connect.</span></h1>
+            <p style="max-width: 700px;">Have a project in mind or a problem to solve? Drop me a line and let's talk.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="contact-wrapper">
+                <div>
+                    <div class="contact-info-card glass">
+                        <h3>Struggling With...</h3>
+                        <div class="contact-method">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Ops bottlenecks slowing your team down?</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Security concerns keeping you up at night?</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>Not sure how to leverage AI effectively?</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Ready to scale but don't know where to start?</span>
+                        </div>
+                        <p style="margin-top: 1.5rem; margin-bottom: 0;">I love solving these types of challenges. Let's connect!</p>
+                    </div>
+                    <div class="contact-info-card glass" style="margin-top: 2rem;">
+                        <h3>Connect Directly</h3>
+                        <div class="contact-method">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:alton@shiftclick.io">alton@shiftclick.io</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/altonjx/" target="_blank">linkedin.com/in/altonjx</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-form glass">
+                        <h3>Send a Message</h3>
+                        <form action="https://formspree.io/f/mjgabbgj" method="POST">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Topic</label>
+                                <select name="topic" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="consulting">Consulting Engagement</option>
+                                    <option value="security">Cybersecurity</option>
+                                    <option value="coaching">Leadership Coaching</option>
+                                    <option value="speaking">Speaking / Media</option>
+                                    <option value="automation">Workflow / Automation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea name="message" placeholder="What's on your mind?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="images/alton-logo-footer.png" alt="Alton Johnson" width="411" height="87" loading="lazy" style="max-width: 200px; height: auto; opacity: 0.8;">
+            </div>
+            <div class="footer-bottom">
+                <p>root@altonj.io:~$ <span class="cursor">_</span></p>
+                <div class="socials">
+                    <a href="https://github.com/altjx" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/altonjx/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/altonjx" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/altjx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/altonjx" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
