@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Alton Johnson</title>
+    <meta name="description" content="Get in touch with Alton Johnson for cybersecurity consulting, workflow automation, leadership coaching, or speaking engagements. Available for new projects.">
+    <title>Contact | Alton Johnson Cybersecurity & AI Consulting</title>
     <link rel="icon" href="images/favicon.ico">
+    <link rel="canonical" href="https://altonj.io/contact.html">
+    <meta property="og:title" content="Contact | Alton Johnson Cybersecurity & AI Consulting">
+    <meta property="og:description" content="Get in touch with Alton Johnson for cybersecurity consulting, workflow automation, leadership coaching, or speaking engagements.">
+    <meta property="og:image" content="https://altonj.io/images/Alton-Headshot7.jpg">
+    <meta property="og:url" content="https://altonj.io/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alton Johnson">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact | Alton Johnson Cybersecurity & AI Consulting">
+    <meta name="twitter:description" content="Get in touch with Alton Johnson for cybersecurity consulting, workflow automation, leadership coaching, or speaking engagements.">
+    <meta name="twitter:image" content="https://altonj.io/images/Alton-Headshot7.jpg">
+    <meta name="twitter:site" content="@altonjx">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8MFDJ1BH9"></script>
     <script>
@@ -18,9 +31,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://altonj.io/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://altonj.io/contact.html"}]}
+    </script>
     <style>
         .contact-wrapper {
             display: grid;
@@ -165,6 +180,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
 
     <div class="bg-glow"></div>
 
@@ -187,6 +203,7 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <header class="page-header">
         <div class="container">
             <span class="section-label">Get In Touch</span>
@@ -200,7 +217,7 @@
             <div class="contact-wrapper">
                 <div>
                     <div class="contact-info-card glass">
-                        <h3>Struggling With...</h3>
+                        <h2>Struggling With...</h2>
                         <div class="contact-method">
                             <i class="fa-solid fa-bolt"></i>
                             <span>Ops bottlenecks slowing your team down?</span>
@@ -220,32 +237,32 @@
                         <p style="margin-top: 1.5rem; margin-bottom: 0;">I love solving these types of challenges. Let's connect!</p>
                     </div>
                     <div class="contact-info-card glass" style="margin-top: 2rem;">
-                        <h3>Connect Directly</h3>
+                        <h2>Connect Directly</h2>
                         <div class="contact-method">
                             <i class="fa-solid fa-envelope"></i>
                             <a href="mailto:alton@shiftclick.io">alton@shiftclick.io</a>
                         </div>
                         <div class="contact-method">
                             <i class="fa-brands fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/altonjx/" target="_blank">linkedin.com/in/altonjx</a>
+                            <a href="https://www.linkedin.com/in/altonjx/" target="_blank" rel="noopener noreferrer">linkedin.com/in/altonjx</a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="contact-form glass">
-                        <h3>Send a Message</h3>
+                        <h2>Send a Message</h2>
                         <form action="https://formspree.io/f/mjgabbgj" method="POST">
                             <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" name="name" placeholder="Your name" required>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
                             </div>
                             <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" name="email" placeholder="your@email.com" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
                             </div>
                             <div class="form-group">
-                                <label>Topic</label>
-                                <select name="topic" required>
+                                <label for="topic">Topic</label>
+                                <select id="topic" name="topic" required>
                                     <option value="" disabled selected>Select a topic</option>
                                     <option value="consulting">Consulting Engagement</option>
                                     <option value="security">Cybersecurity</option>
@@ -256,8 +273,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Message</label>
-                                <textarea name="message" placeholder="What's on your mind?" required></textarea>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
                             </div>
                             <button type="submit" class="btn-submit">Send Message</button>
                         </form>
@@ -266,6 +283,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -275,11 +293,11 @@
             <div class="footer-bottom">
                 <p>root@altonj.io:~$ <span class="cursor">_</span></p>
                 <div class="socials">
-                    <a href="https://github.com/altjx" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/altonjx/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/altonjx" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/altjx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/altonjx" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/altjx" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/altonjx/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/altonjx" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/altjx/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/altonjx" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
         </div>
