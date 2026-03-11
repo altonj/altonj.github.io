@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Alton Johnson">
+    <title>404 - Page Not Found | Alton Johnson</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .error-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 0;
+        }
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        .error-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(5rem, 15vw, 10rem);
+            font-weight: 700;
+            background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .error-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .error-terminal {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+        .error-terminal .line {
+            width: auto;
+            height: auto;
+            background: none;
+            margin: 0.4rem 0;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .error-terminal .prompt {
+            color: #00d4ff;
+        }
+        .error-terminal .error-msg {
+            color: #ff6b6b;
+        }
+        .error-terminal .success-msg {
+            color: #51cf66;
+        }
+        .error-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Alton Johnson - Cybersecurity Expert" width="270" height="270" style="height: 40px; width: auto;">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact_Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="error-section">
+            <div class="container">
+                <div class="error-content">
+                    <div class="error-code">404</div>
+                    <h2>Page Not Found</h2>
+                    <div class="error-terminal">
+                        <div class="line"><span class="prompt">root@altonj.io:~$</span> cd /requested/page</div>
+                        <div class="line"><span class="error-msg">bash: cd: /requested/page: No such file or directory</span></div>
+                        <div class="line"><span class="prompt">root@altonj.io:~$</span> find / -name "page" 2>/dev/null</div>
+                        <div class="line"><span class="error-msg"># No results found</span></div>
+                        <div class="line"><span class="prompt">root@altonj.io:~$</span> echo "Let's get you back on track"</div>
+                        <div class="line"><span class="success-msg">Let's get you back on track</span></div>
+                    </div>
+                    <div class="error-btns">
+                        <a href="index.html" class="btn btn-primary">Go Home</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="images/alton-logo-footer.png" alt="Alton Johnson" width="411" height="87" loading="lazy" style="max-width: 200px; height: auto; opacity: 0.8;">
+            </div>
+            <div class="footer-bottom">
+                <p>root@altonj.io:~$ <span class="cursor">_</span></p>
+                <div class="socials">
+                    <a href="https://github.com/altjx" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/altonjx/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/altonjx" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/altjx/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/altonjx" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
