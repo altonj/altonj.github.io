@@ -39,11 +39,17 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://www.altonj.io/#alton-johnson",
       "name": "Alton Johnson",
       "jobTitle": "Cybersecurity Entrepreneur & Consultant",
       "description": "Founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified penetration tester, and AI automation consultant with 15+ years in cybersecurity.",
       "url": "https://www.altonj.io",
-      "image": "https://www.altonj.io/images/Alton-Headshot7.jpg",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.altonj.io/images/Alton-Headshot7.jpg",
+        "width": 800,
+        "height": 1200
+      },
       "sameAs": [
         "https://www.linkedin.com/in/altonjx/",
         "https://github.com/altjx",
@@ -58,7 +64,10 @@
         {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CCNA"},
         {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "eCPPT"}
       ],
-      "alumniOf": "Louisiana Technical College",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Louisiana Technical College"
+      },
       "worksFor": {
         "@type": "Organization",
         "name": "Independent Consultant"
@@ -73,7 +82,18 @@
     }
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","name":"Alton Johnson","url":"https://www.altonj.io","description":"Founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified pen tester, and AI automation consultant.","author":{"@type":"Person","name":"Alton Johnson"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.altonj.io/services.html"}}}
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.altonj.io/#website",
+      "name": "Alton Johnson",
+      "url": "https://www.altonj.io",
+      "description": "Founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified pen tester, and AI automation consultant.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://www.altonj.io/#alton-johnson"
+      }
+    }
     </script>
 </head>
 <body>
