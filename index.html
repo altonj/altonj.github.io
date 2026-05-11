@@ -11,13 +11,17 @@
     <meta property="og:description" content="Alton Johnson — founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified pen tester, and AI automation consultant. 15+ years in cybersecurity.">
     <meta property="og:image" content="https://www.altonj.io/images/Alton-Headshot7.jpg">
     <meta property="og:url" content="https://www.altonj.io/">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="profile">
+    <meta property="profile:first_name" content="Alton">
+    <meta property="profile:last_name" content="Johnson">
+    <meta property="profile:username" content="altonjx">
     <meta property="og:site_name" content="Alton Johnson">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Alton Johnson | Founder, Vonahi Security (Acquired by Kaseya)">
     <meta name="twitter:description" content="Alton Johnson — founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified pen tester, and AI automation consultant. 15+ years in cybersecurity.">
     <meta name="twitter:image" content="https://www.altonj.io/images/Alton-Headshot7.jpg">
     <meta name="twitter:site" content="@altonjx">
+    <meta name="twitter:creator" content="@altonjx">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8MFDJ1BH9"></script>
     <script>
@@ -38,61 +42,88 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "@id": "https://www.altonj.io/#alton-johnson",
-      "name": "Alton Johnson",
-      "jobTitle": "Cybersecurity Entrepreneur & Consultant",
-      "description": "Founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified penetration tester, and AI automation consultant with 15+ years in cybersecurity.",
-      "url": "https://www.altonj.io",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://www.altonj.io/images/Alton-Headshot7.jpg",
-        "width": 800,
-        "height": 1200
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/altonjx/",
-        "https://github.com/altjx",
-        "https://x.com/altonjx",
-        "https://www.instagram.com/altjx/",
-        "https://www.facebook.com/altonjx"
-      ],
-      "knowsAbout": ["Cybersecurity", "Penetration Testing", "AI Automation", "Startup Consulting", "Python", "AWS"],
-      "hasCredential": [
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "OSCP"},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "OSCE"},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CCNA"},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "eCPPT"}
-      ],
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Louisiana Technical College"
-      },
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Independent Consultant"
-      },
-      "founder": {
-        "@type": "Organization",
-        "name": "Vonahi Security",
-        "foundingDate": "2018",
-        "dissolutionDate": "2023",
-        "description": "Automated network penetration testing platform, acquired by Kaseya in 2023."
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://www.altonj.io/#website",
-      "name": "Alton Johnson",
-      "url": "https://www.altonj.io",
-      "description": "Founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified pen tester, and AI automation consultant.",
-      "author": {
-        "@type": "Person",
-        "@id": "https://www.altonj.io/#alton-johnson"
-      }
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://www.altonj.io/#profilepage",
+          "url": "https://www.altonj.io/",
+          "name": "Alton Johnson — Founder of Vonahi Security",
+          "dateCreated": "2024-01-01",
+          "dateModified": "2026-05-11",
+          "mainEntity": {"@id": "https://www.altonj.io/#alton-johnson"},
+          "about": {"@id": "https://www.altonj.io/#alton-johnson"},
+          "isPartOf": {"@id": "https://www.altonj.io/#website"},
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.altonj.io/images/Alton-Headshot7.jpg",
+            "width": 800,
+            "height": 1200
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.altonj.io/"}
+            ]
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.altonj.io/#alton-johnson",
+          "name": "Alton Johnson",
+          "alternateName": "altonjx",
+          "givenName": "Alton",
+          "familyName": "Johnson",
+          "jobTitle": "Cybersecurity Entrepreneur & Consultant",
+          "description": "Founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified penetration tester, and AI automation consultant with 15+ years in cybersecurity.",
+          "url": "https://www.altonj.io",
+          "mainEntityOfPage": {"@id": "https://www.altonj.io/#profilepage"},
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.altonj.io/images/Alton-Headshot7.jpg",
+            "width": 800,
+            "height": 1200
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/altonjx/",
+            "https://github.com/altjx",
+            "https://x.com/altonjx",
+            "https://www.instagram.com/altjx/",
+            "https://www.facebook.com/altonjx"
+          ],
+          "knowsAbout": ["Cybersecurity", "Penetration Testing", "AI Automation", "Startup Consulting", "Python", "AWS"],
+          "hasCredential": [
+            {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "OSCP"},
+            {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "OSCE"},
+            {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CCNA"},
+            {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "eCPPT"}
+          ],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Louisiana Technical College"
+          },
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Independent Consultant"
+          },
+          "founder": {
+            "@type": "Organization",
+            "name": "Vonahi Security",
+            "foundingDate": "2018",
+            "dissolutionDate": "2023",
+            "description": "Automated network penetration testing platform, acquired by Kaseya in 2023."
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.altonj.io/#website",
+          "name": "Alton Johnson",
+          "url": "https://www.altonj.io",
+          "inLanguage": "en-US",
+          "description": "Founder of Vonahi Security (acquired by Kaseya), OSCP/OSCE-certified pen tester, and AI automation consultant.",
+          "publisher": {"@id": "https://www.altonj.io/#alton-johnson"},
+          "author": {"@id": "https://www.altonj.io/#alton-johnson"}
+        }
+      ]
     }
     </script>
 </head>
